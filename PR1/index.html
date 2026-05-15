@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ТехноСтоп</div>
+        <nav>
+            <ul>
+                <li>Main</li>
+                <li>Articles</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Podcast</li>
+            </ul>
+        </nav>
+        <button class="auth">Log in</button>
+    </header>
+    <main>
+        <article>
+                <div class="article-image">
+                    <img src="placeholder.jpg" alt="Скриншот консолі браузера з підсвіченою помилкою">
+                </div>
+
+                <h1>Як читати помилки браузера: гайд для першокурсника</h1>
+                <p class="subtitle">Стек-трейси перестануть лякати, якщо знати, з чого вони складаються</p>
+
+                <div class="meta-info">
+                    <time datetime="2026-05-11">11 травня 2026</time> | 
+                    <span class="author">автор: Олена Петренко</span> | 
+                    <span class="read-time">7 хв читання</span>
+                </div>
+
+                <section>
+                    <h2>1. DevTools це не страшно</h2>
+                    <p>Перше, з чим стикається кожен веб-розробник  це  панель розробника. Натискаєш F12, і відкривається інший світ. У цьому розділі ми пройдемось по найкорисніших вкладках і навчимось бачити те, що  бачить браузер. </p>
+                    <p>Особлива увага вкладці Сonsole. Саме там з'являються повідомлення про помилки в JavaScript.  Кожне повідомлення має певну структуру, і коли ви її розумієте, лагодження стає  просто крок за кроком. </p>
+                </section>
+
+                <section>
+                    <h2>2. Анатомія помилки </h2>
+                    <p>Типове повідомлення про помилку складається з кількох частин: </p>
+                    <ul>
+                        <li>Тип помилки (TypeError, ReferenceError, SyntaxError тощо) </li>
+                        <li>Опис проблеми у людських словах </li>
+                        <li>Стек-трейс ланцюжок викликів, що привів до помилки </li>
+                        <li>Посилання на конкретний файл і рядок </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>3. Найчастіші помилки початківця</h2>
+                    <p>Нижче - таблиця з помилками, які зустрічаються у 90% домашніх завдань першокурсників: </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Тип </th>
+                                <th>Що означає </th>
+                                <th>Як виправити </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ReferenceError </td>
+                                <td>Звертаєтесь до неіснуючої змінної </td>
+                                <td>Перевірте написання, область видимості </td>
+                            </tr>
+                            <tr>
+                                <td>TypeError </td>
+                                <td>Операція над неправильним типом </td>
+                                <td>Подивіться, що саме у змінній на момент виклику </td>
+                            </tr>
+                            <tr>
+                                <td>SyntaxError </td>
+                                <td>Помилка у синтаксисі JS </td>
+                                <td>Запустіть код через лінтер </td>
+                            </tr>
+                            <tr>
+                                <td>404</td>
+                                <td>Файл/ресурс не знайдено </td>
+                                <td>Перевірте шлях у вкладці Network </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <blockquote>
+                    <p>«Помилка це не покарання, це підказка. Браузер каже вам, у якому саме рядку він не зміг продовжити роботу. Це найкоштовніша інформація, яку ви можете отримати.»</p>
+                    <footer>— Іван Коваль, ментор курсу</footer>
+                </blockquote>
+
+                <p>Звикайте відкривати консоль на кожному сайті, який ви будуєте. З досвідом стек-трейси стануть для вас читабельними так само, як ця стаття.</p>
+            </article>
+    </main>
+    <footer>
+        <div class="logo">ТехноСтоп * 2026</div>
+        <p>Контакти: <a href="">hello@technostop.ua</a></p>
+        <div class="social-media">
+        <ul>
+            <li><a href="https://www.youtube.com/technostop">Youtube</a></li>
+            <li><a href="https://twitter.com/technostop">Twitter</a></li>
+            <li><a href="https://t.me/technostop">Telegram</a></li>
+            <li><a href="https://github.com/technostop">GitHub</a></li>
+        </ul>
+        </div>
+    </footer>
+</body>
+</body>
+</html>
