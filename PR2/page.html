@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selectors playground — практична CSS 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--
+    Для практичної завдання 2: «Селектори без зайвих класів».
+
+    У HTML дозволено лише класи .intro і .container — більше класи
+    додавати НЕ МОЖНА. CSS-правила пишуться тільки через теги,
+    атрибути, псевдокласи і псевдоелементи.
+  -->
+
+  <div class="container">
+
+    <h1>Реєстрація на курс</h1>
+
+    <p class="intro">
+      Заповніть форму нижче, щоб зареєструватися на наш безкоштовний інтенсив
+      з веб-розробки. Поля з зірочкою — обов'язкові.
+    </p>
+
+    <p>
+      Курс триває 6 тижнів. Заняття — щовівторка і четверга. Після курсу
+      ви отримаєте сертифікат і доступ до закритого Telegram-чату випускників.
+    </p>
+
+    <h2>Особисті дані</h2>
+
+    <form>
+      <p>
+        <label>Ваше імʼя
+          <input type="text">
+        </label>
+      </p>
+      <p>
+        <label>Електронна пошта
+          <input type="email">
+        </label>
+      </p>
+      <p>
+        <label>Пароль (для особистого кабінету)
+          <input type="password">
+        </label>
+      </p>
+      <p>
+        <label>Вік
+          <input type="number">
+        </label>
+      </p>
+      <p>
+        <label>Бажана дата старту
+          <input type="date">
+        </label>
+      </p>
+      <p>
+        <label>Телефон (необовʼязково)
+          <input type="tel">
+        </label>
+      </p>
+      <p>
+        <button type="submit">Зареєструватися</button>
+      </p>
+    </form>
+
+    <h2>Що ви опануєте</h2>
+
+    <p>Основні блоки програми курсу:</p>
+
+    <ul>
+      <li>HTML і семантика веб-сторінки</li>
+      <li>CSS — оформлення, селектори, адаптивність</li>
+      <li>JavaScript — синтаксис, типи, функції</li>
+      <li>DOM — взаємодія з елементами сторінки</li>
+      <li>HTTP і робота з API</li>
+    </ul>
+
+    <p>А також додаткові інструменти:</p>
+
+    <ul>
+      <li>Git і GitHub</li>
+      <li>DevTools і дебагінг</li>
+      <li>Базові основи TypeScript</li>
+      <li>Веб-безпека: XSS, CSRF, MitM</li>
+      <li>Деплой простих застосунків</li>
+    </ul>
+
+    <h2>Розклад занять</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Тиждень</th>
+          <th>Тема</th>
+          <th>Тривалість</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>HTML і CSS</td>
+          <td>4 заняття</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>JavaScript: основи</td>
+          <td>4 заняття</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>DOM і події</td>
+          <td>4 заняття</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>HTTP і AJAX</td>
+          <td>4 заняття</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>TypeScript і проєкт</td>
+          <td>4 заняття</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Безпека і залік</td>
+          <td>3 заняття + захист</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Відгуки випускників</h2>
+
+    <blockquote>
+      Я прийшла в курс без жодного коду в життя і вийшла з власним сайтом-портфоліо.
+      Найкращі шість тижнів моєї освіти.
+    </blockquote>
+
+    <blockquote>
+      Викладачі реально допомагають. Не залишають на самоті з помилками,
+      пояснюють «чому», а не лише «як».
+    </blockquote>
+
+    <p>Більше відгуків — на сторінці «Відгуки».</p>
+
+  </div>
+
+</body>
+</html>

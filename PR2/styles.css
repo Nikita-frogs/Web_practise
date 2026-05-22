@@ -1,0 +1,27 @@
+input[type="email"]{
+    border: 2px solid blue;
+}
+
+input:focus{
+    border: 3px solid blue;
+}
+
+ul li:first-child{
+    font-weight: bold;
+}
+
+tr:nth-child(2n)   { 
+    background: #f5f5f5; 
+}
+
+p:not(.intro){
+    color: #666;
+}
+
+blockquote::before{
+    content: '"';
+}
+
+blockquote::after{
+    content: '"';
+}
