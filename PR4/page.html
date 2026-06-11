@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="counter" data-name="кави">
+        <button class="minus">−</button>
+        <span class="value">0</span>
+        <span class="label">Кави</span>
+        <button class="plus">+</button>
+    </div>
+    <div class="counter" data-name="чаю">
+        <button class="minus">−</button>
+        <span class="value">0</span>
+        <span class="label">Чаю</span>
+        <button class="plus">+</button>
+    </div>
+    <div class="counter" data-name="води">
+        <button class="minus">−</button>
+        <span class="value">0</span>
+        <span class="label">Води</span>
+        <button class="plus">+</button>
+    </div>
+
+    <p>Всього: <span id="total">0</span> · Лідер: <span id="leader">—</span></p>
+    <button id="undo">Скасувати останнє</button>
+    <button id="reset">Скинути все</button>
+    <button id="export">Експорт у JSON</button>
+
+    <ul id="history"></ul> <!-- останні 5 дій -->
+</body>
+
+</html>
