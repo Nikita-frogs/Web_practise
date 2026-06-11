@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Explorer</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>Pokemon Explorer</h1>
+
+    <label>
+      Пошук:
+      <input id="searchInput" type="search" placeholder="pikachu">
+    </label>
+
+    <p>
+      <button id="prevBtn" type="button">Назад</button>
+      <span id="pageInfo">Сторінка 1</span>
+      <button id="nextBtn" type="button">Вперед</button>
+    </p>
+
+    <p id="status"></p>
+    <div id="pokemonList"></div>
+  </main>
+
+  <dialog id="detailsDialog">
+    <button id="closeDetails" type="button">Закрити</button>
+    <div id="detailsContent"></div>
+  </dialog>
+</body>
+
+</html>
