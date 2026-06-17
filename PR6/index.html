@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Бюджет родини</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/webdatarocks/webdatarocks.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/webdatarocks/webdatarocks.js"></script>
+</head>
+<body>
+
+  <p>Загальні витрати: <strong id="total-amount"></strong> грн</p>
+  <button onclick="doExport()">Експорт у HTML</button>
+  <div id="pivot-container"></div>
+
+  <script>
+    const RAW = [
+      { category: 'Продукти', month: 'Січень',   amount: 8400 },
+      { category: 'Продукти', month: 'Лютий',    amount: 7900 },
+      { category: 'Оренда', month: 'Лютий',    amount: 8900 },
+      { category: 'Відпустка', month: 'Серпень',    amount: 6900 },
+    ];
+
+    document.getElementById('total-amount').textContent =
+      RAW.reduce((s, r) => s + r.amount, 0).toLocaleString('uk-UA');
+
+    const pivot = new WebDataRocks({
+      container: '#pivot-container',
+      toolbar: false,
+      report: {
+        dataSource: { data: RAW },
+        slice: {
+          rows:    [{ uniqueName: 'category' }],
+          columns: [{ uniqueName: 'month'}],
+          measures: [{ uniqueName: 'amount', aggregation: 'sum', caption: 'Сума, грн' }]
+        }
+      }
+    });
+
+    function doExport() {
+      pivot.exportTo('html', { filename: 'family_budget', destinationType: 'file' });
+    }
+  </script>
+
+</body>
+</html>
